@@ -1,4 +1,13 @@
-
+/* font style start here */
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto-Light.ttf") format("ttf");
+  /* Add additional font formats if necessary */
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* font style ends here  */
 
 /*style for navigation menu starts here*/
 ul {
@@ -15,7 +24,7 @@ li {
 }
 
 li a {
-  display: block;
+  display: inline;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -23,27 +32,25 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #FF92A5;
+  background-color: #ff92a5;
 }
 
 .active {
-  background-color: #FFC0CB;
+  background-color: #ffc0cb;
 }
 /*style for navigation menu ends here*/
 
-
 /*style for about,work, resume card starts here*/
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
   border-radius: 5px;
   margin: 0px 0px 0px 15px;
- 
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 img {
@@ -62,12 +69,12 @@ img {
 /*style for about,work, resume card ends here*/
 
 /*style for video starts here*/
-.videocontainer{
+.videocontainer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-  background-color: #FF92A5;
+  background-color: #ff92a5;
 }
 
 /*style for video ends here*/
@@ -77,13 +84,14 @@ img {
 .contactheader {
   text-align: center;
   font-size: 200%;
-  font-family: fantasy;
+
   font-style: italic;
-  color: #FF92A5;
+  color: #ff92a5;
 }
 
-
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -95,8 +103,8 @@ input[type=text], select, textarea {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input[type=submit] {
-  background-color: #FF92A5;
+input[type="submit"] {
+  background-color: #ff92a5;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -104,26 +112,26 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: #FFC0CB;
+input[type="submit"]:hover {
+  background-color: #ffc0cb;
 }
 
 .containercontact {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  display:grid;
+  display: grid;
   margin: 10px;
 }
 /*style for contact ends here*/
 
 /*style for footer starts here*/
 .footer {
-  position:relative;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color:#333;
+  background-color: #333;
   padding: 0.5%;
   color: white;
   text-align: center;
